@@ -1,0 +1,105 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Telescope Simulator</title>
+
+
+  <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/telescope.css">
+  <link href="http://fonts.googleapis.com/css?family=Lato:300,400,700|Karma:400,700" rel="stylesheet" type="text/css" />
+</head>
+
+<body onload="loadXMLDoc();">
+
+
+
+<nav class="navbar navbar-expand-lg sticky-top navbar-dark bg-dark">
+  <div class="container-fluid">
+    <!-- <a class="navbar-brand" href="#title">Navbar</a> -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <a class="nav-link active" aria-current="page" href="#"></a>
+        <a class="nav-link" href="#introduction">/ Introduction /</a>
+        <a class="nav-link" href="#optics">/ Optics /</a>
+        <a class="nav-link" href="#sensors">/ Sensors /</a>
+        <a class="nav-link" href="#atmosphere">/ Atmosphere /</a>
+        <a class="nav-link" href="#credits">/ Credits /</a>
+      </div>
+    </div>
+  </div>
+</nav>
+
+
+
+<div id = 'title' class = 'page' >
+  <div class="container">
+      <div class="row align-items-center">
+          <div class="col-md-12">
+            <h1>Something about Telescopes</h1>
+            <h3><b>Stephen Wilkins</b> University of Sussex</h3>
+          </div>
+      </div>
+  </div>
+</div>
+
+<div id = 'introduction' class = 'page' >
+  <div class="container">
+      <div class="row align-items-center">
+          <div class="col-md-12">
+            <h2>Introduction</h2>
+          </div>
+      </div>
+  </div>
+</div>
+
+
+<div id = 'optics' class = 'page' >
+  <div class="container">
+      <div class="row align-items-center">
+          <div class="col-md-12">
+
+            <div class="flex-container">
+
+                <div class="flex-child">
+                  <h2>Original</h2>
+                  <img id="original" src='img/telescope/M101.jpg' style="width: 300px; height: 300px;"></img>
+                </div>
+
+                <div class="flex-child">
+                  <h2>Telescope Optics</h2>
+                  <canvas id="blurred" style="width: 300px; height: 300px;"></canvas><br>
+                  <h4>Telescope Aperture</h4>
+                  <input class='slider reversedRange' id="slider" type="range" min="1" max="100" value="10">
+                </div>
+
+                <div class="flex-child">
+                  <h2>Sensor</h2>
+                  <canvas id="pixelated" style="width: 300px; height: 300px;"></canvas><br>
+                  <h4>Pixel Scale</h4>
+                  <input class='slider reversedRange' id="blocks" type="range" min="1" max="20" value="10">
+                </div>
+
+            </div>
+
+
+          </div>
+      </div>
+  </div>
+</div>
+
+
+
+
+<script src="jquery/jquery-min.js"></script>
+<script src="bootstrap/js/bootstrap.min.js"></script>
+<script src="js/smoothscroll.js"></script>
+<script src="js/pixelate.js"></script>
+<script src="js/stackblur.js"></script>
+
+</body>
+</html>
