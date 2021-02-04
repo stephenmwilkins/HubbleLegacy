@@ -11,14 +11,48 @@
 	color: #ccc;
 }
 
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Poppins', sans-serif;
+}
+
 h1 {
 	color: #fff;
-	font-size: 60pt;
+	font-size: 80pt;
 }
 
 h2 {
 	color: #fff;
+  font-size: 60pt;
 }
+
+h3 {
+	color: #fff;
+  font-size: 40pt;
+}
+
+h4 {
+	color: #fff;
+  font-size: 30pt;
+}
+
+h5 {
+	color: #fff;
+  font-size: 20pt;
+}
+
+h6 {
+	color: #fff;
+  font-size: 16pt;
+}
+
+p {
+  font-size: 18px;
+  color: #a0a6ad;
+  line-height: 26px;
+  font-family: 'Roboto', sans-serif;
+  margin-bottom: 0;
+}
+
 
 
 .row {
@@ -26,16 +60,17 @@ h2 {
 }
 
 a {
-  color: #3c9cfd;
+  color: #fff;
+text-decoration: none;
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
 
-
-
-
+a:visited {
+  color: #fff;
+}
 
 
 
