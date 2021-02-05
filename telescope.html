@@ -30,6 +30,9 @@
               <a class="nav-link page-scroll" href="#sensors">Sensors</a>
             </li>
             <li class="nav-item">
+              <a class="nav-link page-scroll" href="#noise">Noise</a>
+            </li>
+            <li class="nav-item">
               <a class="nav-link page-scroll" href="#atmosphere">Atmosphere</a>
             </li>
             <li class="nav-item">
@@ -103,12 +106,41 @@
 
 
 
+<div id = 'noise' class = 'page' >
+  <div class="container">
+      <div class="row align-items-center">
+          <div class="col-md-8">
+
+            <div class="flex-container">
+
+                <div class="flex-child">
+                  <h5>Original</h5>
+                  <img id="original" src='img/telescope/XDF_gr.png' style="width: 300px; height: 300px;"></img>
+                </div>
+
+                <div class="flex-child">
+                  <h5>with Noise</h5>
+                  <canvas id="noise_canvas" style="width: 300px; height: 300px;"></canvas><br>
+                  <h6>noise</h6>
+                  <input class='slider' id="noise_slider" type="range" min="0" max="255" value="10">
+                </div>
+
+            </div>
+
+          </div>
+      </div>
+  </div>
+</div>
+
+
+
 
 <script src="jquery/jquery-min.js"></script>
 <script src="bootstrap/js/bootstrap.min.js"></script>
 <script src="js/smoothscroll.js"></script>
 <script src="js/pixelate.js"></script>
 <script src="js/stackblur.js"></script>
+<script src="js/noise.js"></script>
 
 </body>
 </html>

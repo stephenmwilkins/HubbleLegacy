@@ -1,4 +1,21 @@
 
+
+
+
+// Create an image element
+var image = new Image();
+image.crossOrigin = "anonymous";
+image.src = "img/rgb/images/pillars_of_creation.jpg";
+
+
+// If the image is completely loaded before this script executes, call init().
+if (image.complete) init();
+
+// In case it is not loaded yet, we listen to its "load" event and call init() when it fires.
+image.addEventListener("load", init);
+
+
+
 $(function () {
   $(".thumb").click(function() {
     $(".thumb").removeClass("thumb_selected");
@@ -39,6 +56,22 @@ function image_selection() {
 
 
 
+// upload your own image
+
+window.addEventListener('load', function() {
+  document.querySelector('input[type="file"]').addEventListener('change', function() {
+      if (this.files && this.files[0]) {
+          image.src = URL.createObjectURL(this.files[0]); // set src to blob url
+          init();
+      }
+  });
+});
+
+
+
+
+
+
 const Rcanvas = document.getElementById("R");
 const Gcanvas = document.getElementById("G");
 const Bcanvas = document.getElementById("B");
@@ -50,19 +83,6 @@ const Bslider = document.getElementById("bOffset");
 
 
 
-
-
-// Create an image element
-var image = new Image();
-image.crossOrigin = "anonymous";
-image.src = "img/rgb/images/"+this.id+".jpg";
-
-
-// If the image is completely loaded before this script executes, call init().
-if (image.complete) init();
-
-// In case it is not loaded yet, we listen to its "load" event and call init() when it fires.
-image.addEventListener("load", init);
 
 
 function init() {
