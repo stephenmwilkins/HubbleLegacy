@@ -21,7 +21,9 @@ window.onload = noise_firstDraw();
 
 function noise_firstDraw() {
     //preload the demo image
-    var initialImageURL = 'img/telescope/XDF_gr.png';
+    // var initialImageURL = 'img/telescope/XDF_gr.png';
+    var initialImageURL = 'img/telescope/M101.jpg';
+    console.log('here');
     noise_draw(initialImageURL);
 
 }

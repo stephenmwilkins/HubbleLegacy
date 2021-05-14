@@ -1,0 +1,203 @@
+
+
+body {
+  background: #000;
+  color: #FFF;
+}
+
+a {
+  color: #DDD;
+}
+
+a:hover {
+  color: #FFF;
+}
+
+.section {
+  padding-top: 50px;
+  padding-bottom: 100px;
+}
+
+#credits {
+  padding-top: 200px;
+}
+
+
+.section_title_container {
+  background-color: #111;
+  padding: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20vh;
+
+}
+
+.section_title_text {
+  font-size: 3vw;
+}
+
+.section_image {
+  width: 80vw;
+}
+
+.do_text {
+  font-size: 2vw;
+}
+
+.main_text {
+  font-size: 1.6vw;
+}
+
+.credits_text {
+  font-size: 1.4vw;
+  color: #AAA;
+}
+
+
+.con {
+  margin: 0 auto;
+}
+
+.flex-container {
+  text-align: center;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.flex-child {
+    flex: 1;
+    /* border: 2px solid yellow; */
+		width:30vw;
+    height:30vw;
+    max-width:300px;
+    max-height:300px;
+		padding:2px;
+}
+
+.canvas_image {
+  width:30vw;
+  height:30vw;
+  max-width:300px;
+  max-height:300px;
+}
+
+
+
+.slider {
+  -webkit-appearance: none;  /* Override default CSS styles */
+  appearance: none;
+  width: 100%; /* Full-width */
+  height: 15px; /* Specified height */
+  background: #333; /* Grey background */
+  outline: none; /* Remove outline */
+  opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
+  -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+  transition: opacity .2s;
+}
+
+
+.small_slider  {
+  width: 250px;
+}
+
+
+/* Mouse-over effects */
+.slider:hover {
+  opacity: 1; /* Fully shown on mouse-over */
+}
+
+/* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none; /* Override default look */
+  appearance: none;
+  width: 25px; /* Set a specific slider handle width */
+  height: 15px; /* Slider handle height */
+  background: #FFF;
+  cursor: pointer; /* Cursor on hover */
+}
+
+.slider::-moz-range-thumb {
+  width: 25px; /* Set a specific slider handle width */
+  height: 15px; /* Slider handle height */
+  background: #FFF; /* Green background */
+  cursor: pointer; /* Cursor on hover */
+}
+
+.reversedRange {
+  direction: rtl
+}
+
+
+
+
+
+
+
+
+
+
+/* The switch - the box around the slider */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.switchslider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.switchslider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .switchslider {
+  background-color: #2196F3;
+}
+
+input:focus + .switchslider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .switchslider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.switchslider.round {
+  border-radius: 34px;
+}
+
+.switchslider.round:before {
+  border-radius: 50%;
+}

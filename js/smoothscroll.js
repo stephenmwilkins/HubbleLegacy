@@ -41,8 +41,7 @@ $('a[href*="#"]')
 
 function scrollto() {
     // Figure out element to scroll to
-    var target = $('#make_rgb');
-    console.log('boom');
+    var target = $('#create');
     $('html, body').animate({
         scrollTop: target.offset().top
       }, 750, function() {

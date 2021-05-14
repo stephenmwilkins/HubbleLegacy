@@ -1,7 +1,78 @@
 
-#title {
-  background-image: url("../img/index/heic0908c_sub.png");
-  background-repeat: no-repeat;
-  background-size: cover;
+body {
   /* background-color: #000; */
+  background-color: #FFF;
+  color:#111;
 }
+
+.full-screen {
+	min-height: 100vh;
+}
+
+.introvid {
+  /* width: auto; */
+  opacity:40%;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  padding: 0px;
+}
+
+.video_wrapper {
+  background-color: #000;
+  padding: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.video_title_container {
+  position:absolute;
+  width:80%;
+  /* text-transform: uppercase; */
+}
+
+.video_title {
+  /* font-family: 'Vidaloka', serif; */
+  font-size: 5vw;
+  color:#FFF;
+}
+
+.made_for {
+  /* font-family: 'Vidaloka', serif; */
+  font-size: 2.5vw;
+  color:#FFF;
+}
+
+.RS_banner {
+  width:100vw;
+}
+
+.RS_banner_img {
+  width:100%;
+}
+
+
+.intro_text {
+  font-size: 2.5vw;
+  color:#444;
+}
+
+.whattodo_text {
+  font-size: 2.2vw;
+  color:#444;
+}
+
+.credits_text {
+  font-size: 1.5vw;
+  color:#777;
+}
+
+.credits_text a {
+  color:#555;
+}
+
+/* .full-size {
+  height: 100vh;
+} */
