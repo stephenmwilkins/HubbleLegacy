@@ -12,6 +12,9 @@ body {
   top:0;
 }
 
+.sidenav a {
+  color: #80bfff;
+}
 
 
 .section_title_container {
@@ -24,47 +27,11 @@ body {
 
 }
 
-.section_title_text {
-  font-size: 4vw;
+
+.section {
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
-
-
-.subsection_title_text {
-  font-size: 2.5vw;
-}
-
-.main_text {
-  font-size: 1.5vw;
-}
-
-
-
-
-
-
-
-
-
-
-.divider {
-  background: #111;
-  text-align: center;
-}
-
-.content-0 {
-  background: #000;
-}
-
-.content-1 {
-  /* background: #111; */
-  background: #000;
-}
-.content-2 {
-  /* background: #151515; */
-  background: #000;
-}
-
-
 
 
 

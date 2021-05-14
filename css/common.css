@@ -1,6 +1,23 @@
 
 
 
+.white {
+  color: #FFF;
+}
+
+.slite {
+  color: #DDD;
+}
+
+.slite a {
+  color: #FFF;
+}
+
+.grey {
+  color: #555;
+}
+
+
 /* .image_overlay {
   position: absolute;
   width: 100%;
@@ -38,19 +55,6 @@
   position:absolute;
   width:80%;
   /* text-transform: uppercase; */
-}
-
-.title_text {
-  /* font-family: 'Vidaloka', serif; */
-  /* font-size: 6vw; */
-  font-size: 5vw;
-  color:#FFF;
-}
-
-.made_for_text {
-  /* font-family: 'Vidaloka', serif; */
-  font-size: 2.5vw;
-  color:#FFF;
 }
 
 
