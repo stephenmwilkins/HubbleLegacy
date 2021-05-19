@@ -64,11 +64,9 @@ function add_noise() {
 
     for (let i = 0; i < data_array.length; i += 4) {
 
-      noise = Math.abs(noise_val*randn_bm());
-
-      data_array[i + 0] = data_array[i + 0] + noise;
-      data_array[i + 1] = data_array[i + 1] + noise;
-      data_array[i + 2] = data_array[i + 2] + noise;
+      data_array[i + 0] = data_array[i + 0] + Math.abs(noise_val*randn_bm());
+      data_array[i + 1] = data_array[i + 1] + Math.abs(noise_val*randn_bm());
+      data_array[i + 2] = data_array[i + 2] + Math.abs(noise_val*randn_bm());
 
     }
 

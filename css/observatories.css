@@ -84,18 +84,36 @@ a:hover {
   max-height:300px;
 }
 
+.controls {
+  padding-top:50px;
+  width:30vw;
+  height:30vw;
+  max-width:300px;
+  max-height:300px;
+  padding-left:10px;
+  vertical-align: middle;
+}
+
+
+
+.reversedRange {
+  direction: rtl
+}
+
+
 
 
 .slider {
   -webkit-appearance: none;  /* Override default CSS styles */
   appearance: none;
   width: 100%; /* Full-width */
-  height: 15px; /* Specified height */
+  height: 20px; /* Specified height */
   background: #333; /* Grey background */
   outline: none; /* Remove outline */
   opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
   -webkit-transition: .2s; /* 0.2 seconds transition on hover */
   transition: opacity .2s;
+  border-radius: 34px;
 }
 
 
@@ -114,7 +132,8 @@ a:hover {
   -webkit-appearance: none; /* Override default look */
   appearance: none;
   width: 25px; /* Set a specific slider handle width */
-  height: 15px; /* Slider handle height */
+  height: 16px; /* Slider handle height */
+  border-radius: 34px;
   background: #FFF;
   cursor: pointer; /* Cursor on hover */
 }
@@ -126,9 +145,6 @@ a:hover {
   cursor: pointer; /* Cursor on hover */
 }
 
-.reversedRange {
-  direction: rtl
-}
 
 
 
@@ -143,8 +159,8 @@ a:hover {
 .switch {
   position: relative;
   display: inline-block;
-  width: 60px;
-  height: 34px;
+  width: 40px;
+  height: 20px;
 }
 
 /* Hide default HTML checkbox */
@@ -170,10 +186,10 @@ a:hover {
 .switchslider:before {
   position: absolute;
   content: "";
-  height: 26px;
-  width: 26px;
-  left: 4px;
-  bottom: 4px;
+  height: 16px;
+  width: 16px;
+  left: 2px;
+  bottom: 2px;
   background-color: white;
   -webkit-transition: .4s;
   transition: .4s;
@@ -188,9 +204,9 @@ input:focus + .switchslider {
 }
 
 input:checked + .switchslider:before {
-  -webkit-transform: translateX(26px);
-  -ms-transform: translateX(26px);
-  transform: translateX(26px);
+  -webkit-transform: translateX(20px);
+  -ms-transform: translateX(20px);
+  transform: translateX(20px);
 }
 
 /* Rounded sliders */

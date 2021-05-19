@@ -1,0 +1,133 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Hubble's Legacy | Astronomical Observatories</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/observatories.css">
+
+</head>
+
+<body>
+
+  <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark" style="opacity:0.9;">
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="index.html"><b>HUBBLE'S LEGACY</b></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="story.html">Story of Hubble</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="colouring.html">Colouring the Universe</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="observatories.html">Astronomical Observatories</a>
+        </li>
+      </ul>
+    </div>
+
+  </nav>
+
+
+
+
+
+  <div class="title_container">
+    <img class="image_overlay" src="img/telescope/vlt.jpg">
+    <div class="title_text_container">
+
+
+
+      <h1 class="display-1 white"><b>Astronomical Observatories</b></h1>
+      <h1 class='white'>Made for the <b>Royal Society Summer Science Exhibition</b> 2021</h1>
+    </div>
+  </div>
+
+
+  <div class="container">
+    <div class="row">
+      <div class="col-sm">
+
+
+
+
+
+        <div class="container section" id="optics">
+
+
+          <h1 class="white"><b>Optics:</b> diffraction</h1>
+          <h5 class="slite">Some text. </h5>
+          <h4 class="white">se the sliders to control both the <b>telescope resolution</b></h4><br>
+
+
+          <div class="flex-container">
+
+            <div class="flex-child">
+              <h5>Original</h5>
+              <img id="original" src='img/telescope/M101.jpg' class="canvas_image"></img>
+            </div>
+
+            <div class="flex-child">
+              <h5>Result</h5>
+              <canvas id="detector_canvas" class="canvas_image"></canvas><br>
+            </div>
+
+            <div class="flex-child controls">
+              <h6>Atmosphere</h6>
+              <label class="switch">
+                <input type="checkbox" id="atmosphere_switch">
+                <span class="switchslider round"></span>
+              </label>
+              <h6>Telescope Resolution</h6>
+              <input class='slider reversedRange' id="optics_slider" type="range" min="1" max="100" value="10">
+              <h6>Pixel Scale</h6>
+              <input class='slider reversedRange' id="detector_slider" type="range" min="1" max="20" value="10">
+              <h6>Sensitivity</h6>
+              <input class='slider reversedRange' id="noise_slider" type="range" min="0" max="100" value="10">
+            </div>
+
+
+
+          </div>
+
+
+
+          <div class="container section fullscreen_section" id="credits">
+
+          </div>
+
+
+        </div>
+
+
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+<script src="jquery/jquery-min.js"></script>
+<script src="bootstrap/js/bootstrap.min.js"></script>
+<script src="js/smoothscroll.js"></script>
+<script src="js/stackblur.js"></script>
+
+<script src="js/observatories_combined.js"></script>
+
+
+</body>
+</html>
