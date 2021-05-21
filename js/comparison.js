@@ -1,3 +1,31 @@
+
+
+// Call & init
+$(document).ready(function(){
+$('.ba-slider').each(function(){
+var cur = $(this);
+// Adjust the slider
+var width = cur.width()+'px';
+cur.find('.resize img').css('width', width);
+});
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 function initComparisons() {
   var x, i;
   /* Find all elements with an "overlay" class: */
@@ -14,8 +42,9 @@ function initComparisons() {
     /* Get the width and height of the img element */
     w = img.offsetWidth;
     h = img.offsetHeight;
+
     /* Set the width of the img element to 50%: */
-    img.style.width = (w *0.9) + "px";
+    img.style.width = (w *0.9) + "%";
     /* Create slider: */
     slider = document.createElement("DIV");
     slider.setAttribute("class", "img-comp-slider");

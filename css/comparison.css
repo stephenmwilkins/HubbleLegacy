@@ -3,7 +3,7 @@
 .img-comp-container {
   border: 10px;
   position: relative;
-  height: 461px; /*should be the same height as the images*/
+  height: 100%; /*should be the same height as the images*/
 }
 
 .img-comp-img {
@@ -29,4 +29,28 @@
   background-color: #fff;
   opacity: 0.7;
   border-radius: 50%;
+}
+
+
+
+
+
+
+
+
+.ba-slider {
+position: relative;
+overflow: hidden;
+}
+.ba-slider img {
+width: 100%;
+display:block;
+}
+.ba-slider .resize {
+position: absolute;
+top:0;
+left: 0;
+height: 100%;
+width: 50%;
+overflow: hidden;
 }

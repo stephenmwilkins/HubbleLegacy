@@ -1,5 +1,7 @@
 
-
+.black {
+  color: #000;
+}
 
 .white {
   color: #FFF;
@@ -39,6 +41,15 @@
 }
 
 
+.image_overlay_100 {
+  opacity:100%;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  padding: 0px;
+}
+
+
 .title_container {
   /* background-color: #000; */
   padding: 0px;
@@ -48,21 +59,52 @@
   height: 100vh;
 }
 
-
-
-
 .title_text_container {
   position:absolute;
   width:80%;
   /* text-transform: uppercase; */
 }
 
-
-
 .fullscreen_section {
   height: 100vh;
   max-height: 100vw;
 }
+
+.fullscreen_image_container_compensator {
+  display: flex;
+  height: 100vh;
+}
+
+.fullscreen_image_container {
+  position: absolute;
+  left: 0;
+  padding: 0px;
+  display: flex;
+  height: 100vh;
+  justify-content: right;
+  align-items: bottom;
+}
+
+.fullscreen_image_caption {
+  /* padding: 10px;
+  text-align: right;
+  position:absolute;
+  width:100%; */
+  position: absolute;
+  bottom: 8px;
+  right: 16px;
+}
+
+
+
+.RS_banner {
+  width:100vw;
+}
+
+.RS_banner_img {
+  width:100%;
+}
+
 
 
 .invert {
