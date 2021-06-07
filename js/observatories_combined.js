@@ -2,8 +2,8 @@
 
 
 
-var combined_canvas = document.getElementById('detector_canvas');
-var combined_ctx = detector_canvas.getContext('2d');
+var combined_canvas = document.getElementById('combined_canvas');
+var combined_ctx = combined_canvas.getContext('2d');
 var combined_img = new Image();
 
 
@@ -28,7 +28,7 @@ function draw (img, imgURL, canvas, ctx, initial_func) {
     // Specify the src to load the image
     img.crossOrigin="anonymous";
     img.src = imgURL;
-
+    console.log('here');
     img.onload = function() {
         canvas.height = img.height;
         canvas.width = img.width;
@@ -51,10 +51,13 @@ function randn_bm() {
 
 
 function update() {
-    var radius = Number(optics_slider.value);
-    var blocks = Number(detector_slider.value);
-    var noise_val = Number(noise_slider.value);
-    if (atmosphere_switch.checked == true){radius += 10;}
+
+    console.log('update');
+
+    var radius = Number(combined_optics_slider.value);
+    var blocks = Number(combined_detector_slider.value);
+    var noise_val = Number(combined_noise_slider.value);
+    if (combined_atmosphere_switch.checked == true){radius += 10;}
 
 
     ctx = combined_ctx
@@ -125,7 +128,7 @@ function update() {
 }
 
 
-optics_slider.addEventListener('change', update, false);
-atmosphere_switch.addEventListener('change', update, false);
-detector_slider.addEventListener('change', update, false);
-noise_slider.addEventListener('change', update, false);
+combined_optics_slider.addEventListener('change', update, false);
+combined_atmosphere_switch.addEventListener('change', update, false);
+combined_detector_slider.addEventListener('change', update, false);
+combined_noise_slider.addEventListener('change', update, false);

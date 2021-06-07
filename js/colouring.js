@@ -9,7 +9,7 @@ image.src = "img/colouring/images/pillars_of_creation.jpg";
 
 
 // If the image is completely loaded before this script executes, call init().
-if (image.complete) init();
+// if (image.complete) init();
 
 // In case it is not loaded yet, we listen to its "load" event and call init() when it fires.
 image.addEventListener("load", init);
@@ -167,13 +167,12 @@ function init() {
   }
 
 
-
-var download = document.getElementById("download");
-
-download.addEventListener('click', function(ev) {
-    download.href = RGBcanvas.toDataURL();
-    download.download = "my_"+image_name+".png";
-}, false);
+}
 
 
+var download_rgb = function(){
+  var link = document.createElement('a');
+  link.download = 'MyRGBImage.png';
+  link.href = document.getElementById('RGB').toDataURL()
+  link.click();
 }
